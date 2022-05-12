@@ -32,7 +32,7 @@ async function getData(type) {
         let char_pool = "words";
         let password_length = formdata.get('passphrase-length');
         let num_passwords = 1;
-        if (formdata.has('num-passwords')) {
+        if (formdata.has('num-passphrases')) {
             num_passwords = formdata.get('num-passphrases');
         }
         var specification = `${char_pool}/${password_length}/${num_passwords}`;
